@@ -1,0 +1,72 @@
+<!-- BEGIN: main --><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title> </title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+
+		<link href='http://fonts.googleapis.com/css?family=Oswald:400,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+		<link rel="stylesheet" type="text/css" href="/style/enetgy.css" media="screen" />
+		<link rel="icon" type="image/png" href="/favicon.png" />
+
+
+		<script type="text/javascript">var $graft = {init_network};</script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script type="text/javascript" src="/script/arbor.js"></script>
+		<script type="text/javascript" src="/script/graphics.js"></script>
+		<script type="text/javascript" src="/script/renderer.js"></script>
+		<script type="text/javascript" src="/script/enetgy.js"></script>
+	</head>
+	<body>
+	<!-- BEGIN: header -->
+		<header>
+		<!-- BEGIN: menu -->
+			<ul>
+			<!-- BEGIN: item -->
+				<li><a href="{item_link}" title="{item_title}">{item_name}</a></li>
+			<!-- END: item -->
+			</ul>
+		<!-- END: menu -->
+		</header>
+	<!-- END: header -->
+	<!-- BEGIN: app -->
+		<div id="enetgy-app">
+			<ul id="enetgy-app-tabs">
+				<li>Global</li>
+				<li>Energy</li>
+				<li>Exergy</li>
+				<li>Entropy</li>
+			</ul>
+			
+			<div id="enetgy-app-canvas">
+				<canvas id="enetgy-view" width="800" height="500"></canvas>
+			</div>
+
+			<div id="enetgy-app-set">
+				<label>Global Settings</label>
+			</div>
+
+			<div id="enetgy-app-add">
+				<label>Elements</label>
+		<!-- BEGIN: elements -->
+				<ul id="enetgy-app-elements">
+			<!-- BEGIN: item -->
+					<li>{item_name}<a rel="{item_rel}" href="#">&nbsp;</a></li>
+			<!-- END: item -->
+				</ul>
+		<!-- END: elements -->
+			</div>
+
+			<div id="enetgy-app-chart">
+			</div>
+		</div>
+	<!-- END: app -->
+	<!-- BEGIN: footer -->
+		<footer>
+		</footer>
+	<!-- END: footer -->
+	</body>
+</html>
+<!-- END: main -->
